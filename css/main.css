@@ -1,0 +1,424 @@
+.top_banner {
+  position: relative;
+  width: 100%;
+  height: 884px;
+  margin: 0 auto;
+}
+.top_banner::before {
+  content: "";
+  width: 100%;
+  height: 720px;
+  background-color: #ffef6b;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+.top_banner .wrap {
+  position: relative;
+  top: -884px;
+  width: 1080px;
+  height: 100%;
+}
+.top_banner .lion {
+  width: 1200px;
+  height: 884px;
+  margin: 0 auto;
+}
+.top_banner .lion img {
+  display: block;
+  width: 1200px;
+  height: 884px;
+}
+.banner_content {
+  position: absolute;
+  top: 200px;
+  left: 40px;
+}
+.banner_content h1 {
+  font-size: 52px;
+  font-weight: var(--bold);
+  line-height: 1.3;
+  margin-bottom: 20px;
+}
+.banner_content p {
+  color: var(--color-font1);
+  margin-bottom: 15px;
+}
+.banner_download {
+  position: absolute;
+  top: 507px;
+  left: 40px;
+  display: flex;
+  gap: 8px;
+}
+.banner_download div {
+  width: 180px;
+  height: 58px;
+  line-height: 32px;
+  text-align: right;
+  border-radius: 10px;
+  background-color: white;
+  padding: 13px 17px;
+  font-weight: var(--medium);
+  font-size: 18px;
+}
+.banner_download div:first-child {
+  background-image: url(../images/카카오뱅크1/googleplay.png);
+  background-position: 10%;
+  background-repeat: no-repeat;
+  background-size: 20%;
+}
+.banner_download div:last-child {
+  background-image: url(../images/카카오뱅크1/applestore.png);
+  background-position: 10%;
+  background-repeat: no-repeat;
+  background-size: 20%;
+}
+/* 계좌개설 */
+.make_account.wrap {
+  height: 750px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px;
+}
+.make_account .img {
+  width: 470px;
+  height: 674px;
+  background-image: url(../images/카카오뱅크1/main-withdrawal.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.content h2 {
+  font-size: 42px;
+  font-weight: var(--bold);
+  line-height: 1.3;
+  margin-bottom: 20px;
+}
+.content p {
+  color: var(--color-font1);
+  margin-bottom: 40px;
+}
+/* 공통되는 버튼부분 */
+.go {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  cursor: pointer;
+}
+.go .btn {
+  background-color: var(--color-btn);
+  border-radius: 7px;
+  height: 55px;
+  line-height: 55px;
+  font-weight: var(--medium);
+  text-align: center;
+}
+/*  */
+.make_account .go .btn {
+  width: 258px;
+}
+/* divide */
+.divide {
+  width: 100%;
+  height: 32px;
+  background-color: var(--color-divide);
+}
+/* deposit-savings */
+.deposit-savings.wrap {
+  height: 750px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 80px;
+}
+.deposit-savings .img {
+  width: 408px;
+  height: 720px;
+  background-image: url(../images/카카오뱅크1/main-savings.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  right: -200px;
+  opacity: 0;
+}
+.deposit-savings .go .btn {
+  width: 170px;
+}
+/* 모임통장gathering */
+.gathering.wrap {
+  height: 750px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px;
+}
+.gathering .img {
+  width: 470px;
+  height: 622px;
+  background-image: url(../images/카카오뱅크1/main-moim.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.gathering .go .btn {
+  width: 258px;
+}
+/* 다함께 */
+.together.wrap {
+  height: 650px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px 0 110px;
+}
+.together .img {
+  width: 461px;
+  height: 380px;
+  background-image: url(../images/카카오뱅크1/main-26weeks.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.together .go .btn {
+  width: 258px;
+}
+/* overseas backgroundimg 넣기 */
+.overseas {
+  background-image: url(../images/카카오뱅크1/home_map.png);
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: 40%;
+  overflow: hidden;
+}
+.overseas .wrap {
+  height: 750px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding: 0 76px 0 86px;
+}
+.overseas.content {
+  margin-left: 150px;
+}
+.overseas .wrap .img {
+  width: 422px;
+  height: 740px;
+  background-image: url(../images/카카오뱅크1/main-foreignRemittance-new.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  position: relative;
+  animation-name: gathering;
+  animation-duration: 1.5s;
+  animation-timing-function: cubic-bezier(0.6, 0.2, 0.1, 1);
+}
+.overseas .wrap .go .btn {
+  width: 258px;
+}
+/* 언제든 */
+.whenever {
+  width: 100%;
+  height: 930px;
+  background-color: #559cde;
+  position: relative;
+  overflow: hidden;
+}
+.whenever .wrap {
+  height: 930px;
+  text-align: center;
+  padding-top: 160px;
+  position: relative;
+}
+.whenever.content {
+  color: white;
+  height: fit-content;
+  background-color: transparent;
+}
+.whenever.content h2 {
+  margin-bottom: 25px;
+}
+.whenever.content p {
+  margin-bottom: 25px;
+  color: white;
+}
+.whenever.content .go .btn {
+  width: 165px;
+  height: 50px;
+  /* background-color: #6db0ef; */
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.whenever.content .go {
+  justify-content: center;
+  align-items: center;
+}
+.whenever .wrap .img {
+  width: 450px;
+  height: 592px;
+  margin: 0 auto;
+  background-image: url(../images/카카오뱅크1/main-loan.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* 낮-밤 */
+.sun {
+  width: 120px;
+  height: 120px;
+  border-radius: 120px;
+  background-color: #ffdc00;
+  position: absolute;
+  top: 200px;
+  right: -30px;
+
+  /* animation-name: sun;
+  animation-delay: 1s;
+  animation-duration: 1s;
+  animation-timing-function: cubic-bezier(0.6, 0.2, 0.1, 1);*/
+}
+.night {
+  width: 100%;
+  height: 930px;
+  background-color: #333b58;
+  position: absolute;
+  top: 930px;
+
+  animation-name: night;
+  animation-delay: 1s;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-timing-function: cubic-bezier(0.6, 0.2, 0.1, 1);
+}
+.moon {
+  background-image: url(../images/카카오뱅크1/moon.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 0%;
+  height: 0%;
+  transform: rotate(345deg);
+  position: absolute;
+  top: 198px;
+  left: 983px;
+  display: none;
+
+  animation-name: moon;
+  animation-timing-function: cubic-bezier(0.6, 0.2, 0.1, 1);
+  animation-duration: 1s;
+  animation-direction: alternate;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+
+/* 카드선택 */
+.cards.wrap {
+  height: 1060px;
+  text-align: center;
+  padding-top: 150px;
+}
+.cards.content {
+  margin-bottom: 100px;
+}
+.cards.content h2 {
+  margin-bottom: 25px;
+  font-size: 44px;
+}
+.cards.content p {
+  margin-bottom: 25px;
+}
+.cards .go {
+  justify-content: center;
+}
+.cards .go .btn {
+  width: 258px;
+}
+.cards_slider {
+  width: 1080px;
+  height: 441px;
+  padding: 0 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 150px;
+}
+.cards_slide {
+  width: 604px;
+  height: 441px;
+}
+.cards_slide img {
+  display: block;
+  width: 280px;
+  height: 441px;
+}
+
+/* 카드슬릭슬라이드 */
+.slick-slide img {
+  transform: scale(0.8);
+}
+.slick-slide.slick-center {
+  width: 280px;
+}
+.slick-slide.slick-center img {
+  transform: none;
+  transition: all, 0.1s;
+}
+/*  */
+
+/* it기술 */
+.it {
+  width: 100%;
+  height: 1056px;
+  background-color: var(--color-gray);
+  padding-top: 170px;
+}
+.it .wrap h2 {
+  font-size: 42px;
+  font-weight: var(--bold);
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 170px;
+  position: relative;
+}
+.it .wrap h2::after {
+  content: "";
+  width: 100px;
+  height: 2px;
+  background-color: #000;
+  position: absolute;
+  bottom: -50px;
+  left: 490px;
+}
+
+.home_it img {
+  display: block;
+  width: 1080px;
+  height: 287px;
+}
+.home_it .it_content {
+  display: flex;
+  align-items: center;
+  margin-top: 35px;
+}
+.home_it .it_content > div {
+  flex: 1;
+  text-align: center;
+}
+.home_it .it_content > div h4 {
+  font-size: 20px;
+  font-weight: var(--bold);
+  margin-bottom: 15px;
+}
+.home_it .it_content > div p {
+  font-size: 15px;
+  line-height: 1.5;
+  color: var(--color-font1);
+}
+
+.header_bg {
+  width: 100%;
+  height: 79px;
+  background-color: white;
+}

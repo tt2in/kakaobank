@@ -1,0 +1,153 @@
+@keyframes easycss {
+  0% {
+    opacity: 0;
+    top: 585px;
+  }
+  100% {
+    opacity: 1;
+    top: 45px;
+  }
+}
+
+@keyframes side_screenCss {
+  from {
+    left: 56px;
+  }
+  to {
+    left: 265px;
+  }
+}
+
+@keyframes iphone_bottomCss {
+  0% {
+    background-position: -400px 0px;
+  }
+  50% {
+    background-position: -400px -220px;
+  }
+  100% {
+    background-position: -400px 0px;
+  }
+}
+
+@keyframes iph_bottomCss {
+  0% {
+    height: 120px;
+  }
+  50% {
+    height: 300px;
+  }
+  100% {
+    height: 219px;
+  }
+}
+@keyframes zipperCss {
+  0% {
+    bottom: 90px;
+  }
+  50% {
+    bottom: 270px;
+  }
+  100% {
+    bottom: 189px;
+  }
+}
+
+@keyframes iphCss {
+  0% {
+    opacity: 0;
+    top: 250px;
+  }
+  100% {
+    opacity: 1;
+    top: 0px;
+  }
+}
+
+@keyframes one {
+  from {
+    left: -400px;
+    top: -150px;
+    opacity: 0;
+  }
+  to {
+    top: -50px;
+    left: 0px;
+    opacity: 1;
+  }
+}
+@keyframes two {
+  from {
+    top: 200px;
+    right: -230px;
+    opacity: 0;
+  }
+  to {
+    top: 100px;
+    right: -30px;
+    opacity: 1;
+  }
+}
+@keyframes three {
+  from {
+    top: 350px;
+    left: -200px;
+    opacity: 0;
+  }
+  to {
+    top: 250px;
+    left: 0px;
+    opacity: 1;
+  }
+}
+@keyframes four {
+  from {
+    top: 510px;
+    right: -230px;
+    opacity: 0;
+  }
+  to {
+    top: 410px;
+    right: -30px;
+    opacity: 1;
+  }
+}
+
+/* main */
+@keyframes gathering {
+  from {
+    top: 300px;
+  }
+  to {
+    top: 0;
+  }
+}
+
+@keyframes night {
+  from {
+    top: 930px;
+  }
+  to {
+    top: 0;
+  }
+}
+
+@keyframes moon {
+  from {
+    width: 0px;
+    height: 0px;
+  }
+  to {
+    width: 116px;
+    height: 97px;
+  }
+}
+
+@keyframes sun {
+  from {
+    background-color: #ffdc00;
+  }
+  to {
+    background-color: white;
+  }
+}

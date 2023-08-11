@@ -1,0 +1,147 @@
+<div class="wrap">
+    <div class="logo"><a href="../pages/main.html"><img src="../images/카카오뱅크1/logo_black.svg" alt=""></a></div>
+    <div>
+        <div class="menu">
+            <ul>
+                <li><a href="#!">은행소개</a>
+                    <div class="bank_intro">
+                            <ul><a href="#!">카카오뱅크</a>
+                                <li><a href="#!">브랜드</a></li>
+                                <li><a href="#!">주주사 소개</a></li>
+                                <li><a href="#!">오시는 길</a></li>
+                                <li><a href="#!">제휴문의</a></li>
+                                <li><a href="#!">금융기술연구소></a></li>
+                            </ul> 
+                            <ul><a href="#!">카카오뱅크</a>
+                                <li><a href="#!">브랜드</a></li>
+                                <li><a href="#!">주주사 소개</a></li>
+                                <li><a href="#!">오시는 길</a></li>
+                                <li><a href="#!">제휴문의</a></li>
+                                <li><a href="#!">금융기술연구소></a></li>
+                            </ul> 
+                            <ul><a href="#!">카카오뱅크</a>
+                                <li><a href="#!">브랜드</a></li>
+                                <li><a href="#!">주주사 소개</a></li>
+                                <li><a href="#!">오시는 길</a></li>
+                                <li><a href="#!">제휴문의</a></li>
+                                <li><a href="#!">금융기술연구소></a></li>
+                            </ul> 
+                            <ul><a href="#!">카카오뱅크</a>
+                                <li><a href="#!">브랜드</a></li>
+                                <li><a href="#!">주주사 소개</a></li>
+                                <li><a href="#!">오시는 길</a></li>
+                                <li><a href="#!">제휴문의</a></li>
+                                <li><a href="#!">금융기술연구소></a></li>
+                            </ul> 
+                    </div>
+                </li>
+                <li><a href="#!">IR투자정보</a>
+                    <div class="bank_intro">
+                        <ul><a href="#!">카카오뱅크</a>
+                            <li><a href="#!">브랜드</a></li>
+                            <li><a href="#!">주주사 소개</a></li>
+                            <li><a href="#!">오시는 길</a></li>
+                            <li><a href="#!">제휴문의</a></li>
+                            <li><a href="#!">금융기술연구소></a></li>
+                        </ul> 
+                        <ul><a href="#!">카카오뱅크</a>
+                            <li><a href="#!">브랜드</a></li>
+                            <li><a href="#!">주주사 소개</a></li>
+                            <li><a href="#!">오시는 길</a></li>
+                            <li><a href="#!">제휴문의</a></li>
+                            <li><a href="#!">금융기술연구소></a></li>
+                        </ul> 
+                        <ul><a href="#!">카카오뱅크</a>
+                            <li><a href="#!">브랜드</a></li>
+                            <li><a href="#!">주주사 소개</a></li>
+                            <li><a href="#!">오시는 길</a></li>
+                            <li><a href="#!">제휴문의</a></li>
+                            <li><a href="#!">금융기술연구소></a></li>
+                        </ul> 
+                         
+                </div>
+                </li>
+                <li><a href="../pages/product.html">상품안내</a>
+                </li>
+                <li><a href="../pages/customer.html">고객센터</a>
+                </li>
+                <li><a href="#!">서류제출하기</a></li>
+            </ul>
+        </div>
+        <div class="eng"><a href="#!"><img src="../images/카카오뱅크1/icon_global.png" alt=""></a></div>
+    </div>
+</div>
+
+<script>
+    var path = $(location).attr('pathname');
+
+        $('.bank_intro').css({ 'visibility': 'hidden' })
+        $('.menu > ul > li').hover(function () {
+            $(this).find('.bank_intro').css({ 'visibility': 'visible' })
+            $('.header').css({ 'background-color': 'white', 'transition': 'all, 0.5s' })
+            $('.menu > ul > li a').css('color','var(--color-font)')
+            $('.header .logo a img').attr("src", "../images/카카오뱅크1/logo_black.svg")
+        }, function () {
+            $('.bank_intro').css({ 'visibility': 'hidden' })
+            $('.header').css('background-color', 'transparent')
+            if ($(window).scrollTop() > 79) {
+                $('.header').css('background-color', 'white')
+            } else {
+                $('.header').css('background-color', 'transparent')
+                if (path.includes('product')) {
+                    $('.header .logo a img').attr("src", "../images/카카오뱅크2/logo-white.png")
+                    $('.menu > ul > li a').css('color','white')
+                    $('.menu > ul > li:last-child a').css({'color':'var(--color-font)'})
+                    $('.eng a img').css({'-webkit-filter': 'brightness(0) invert(1)','filter': 'brightness(0) invert(1)'})
+
+                }
+            }
+        })
+
+        if ($(window).scrollTop() == 0) {
+            $('.header').css('background-color', 'transparent')
+            if (path.includes('product')) {
+                $('.header .logo a img').attr("src", "../images/카카오뱅크2/logo-white.png")
+                $('.menu > ul > li a').css('color','white')
+                $('.menu > ul > li:last-child a').css({'color':'var(--color-font)'})
+                $('.eng a img').css({'-webkit-filter': 'brightness(0) invert(1)','filter': 'brightness(0) invert(1)'})
+            }
+        }else{
+            $('.header .logo a img').attr("src", "../images/카카오뱅크1/logo_black.svg")
+            $('.menu > ul > li a').css('color','var(--color-font)')
+            $('.eng a img').css({'-webkit-filter': 'grayscale(100%) brightness(0)','filter': 'grayscale(100%) brightness(0)'})
+        }
+
+        $(window).scroll(function () {
+            $('.header').css('background-color', 'white')
+            if ($(window).scrollTop() == 0) {
+                $('.header').css('background-color', 'transparent')
+                if (path.includes('product')) {
+                    $('.header .logo a img').attr("src", "../images/카카오뱅크2/logo-white.png")
+                    $('.menu > ul > li a').css('color','white')
+                    $('.menu > ul > li:last-child a').css({'color':'var(--color-font)'})
+                    $('.eng a img').css({'-webkit-filter': 'brightness(0) invert(1)','filter': 'brightness(0) invert(1)'})
+
+                }
+            }else{
+                $('.header .logo a img').attr("src", "../images/카카오뱅크1/logo_black.svg")
+                $('.menu > ul > li a').css('color','var(--color-font)')
+                $('.eng a img').css({'-webkit-filter': 'grayscale(100%) brightness(0)','filter': 'grayscale(100%) brightness(0)'})
+
+            }
+        })
+
+
+// $( window ).resize(function() {
+//     //창크기 변화 감지
+//     var bank_introWidth = $('.bank_intro').width()
+//     var ulNumber = $('.bank_intro ul').length
+//     console.log(ulNumber)
+//     $('.menu > ul > li').hover(function(){
+//         var ulWidth = (bank_introWidth / ulNumber)
+//         $(this).find('.bank_intro ul').css('width',ulWidth)
+//    },function(){
+//    })
+// });
+
+</script>

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>상품안내 | 카카오뱅크-임채현</title>
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/product.css">
+    <link rel="stylesheet" href="../css/animation.css">
+
+    <script src="../js/jquery-1.12.4.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/jquery-ui.min.js"></script>
+    </head>
+    
+    <body>
+        <div class="header"></div>
+        <div class="top">
+            <div class="wrap">
+                <h3>카카오뱅크 입출금통장</h3>
+                <h1>까다로운 계좌개설도<br>
+                    정말 손쉽게</h1>
+                <div class="icons">
+                    <div class="safe">
+                        계좌 속 금고<br>
+                        세이프박스
+                    </div>
+                    <div class="freind">
+                        친구에게<br>
+                        간편하게 이체
+                    </div>
+                    <div class="security">
+                        보안은<br>
+                        더 강력하게
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="easy wrap">
+            <div class="content">
+                <h2>누구나 쉽고 스마트하게</h2>
+                <p>
+                    통장의 많은 정보와 기능들 쉽고 편리하게<br>
+                    이용할 수 있도록 디자인했습니다.<br>
+                    간편하게 이체, 거래내역 자체시 보기도 바로바로,<br>
+                    중요한 내용은 놓치지 않고 확인할 수 있습니다.
+                </p>
+            </div>
+            <div class="images">
+                <div class="iphone">
+                    <div class="iphone_top"></div>
+                </div>
+                <div class="iphone_bottom"></div>
+                <div class="side_screen"></div>
+            </div>
+        </div>
+            <div class="safebox">
+                <div class="wrap">
+                    <div class="images">
+                        <div class="iph">
+                            <div class="iph_top">
+                            </div>
+                            <div class="iph_bottom">
+                                <div class="zipper"></div>
+                            </div>
+                            <div class="cash"><span>5,000,000</span>원</div>
+                            <div class="store"></div>
+                        </div>
+                        <!-- 검정거 after로하자 -->
+                    </div>
+                    <div class="content">
+                        <h2>
+                            계좌 속 금고,<br>
+                            세이프박스
+                        </h2>
+                        <p>
+                            여러 개의 통장을 만들지 않아도 쉽게 통장 잔고를<br>
+                            관리할 수 있습니다. 여유 자금이 있다면 하루만 맡겨도<br>
+                            연 2.20%(세전)를 제공하는 세이프박스에 보관해보세요.
+                        </p>
+                    </div>
+                </div>
+            <script>
+                
+var isVisible = false;
+$('.safebox').hide()
+
+$(window).on('scroll',function() {
+    if (checkVisible($('.safebox'))&&!isVisible) {
+        $('.safebox').show()
+        isVisible=true;
+        $({ val: 5000000 }).delay(1500).animate({ val1: 9000000 , val2:8200000 }, {
+                        duration: 1500,
+                        step: function () {
+                            const num =  numberWithCommas(Math.floor(this.val1));
+                            $(".cash span").text(num);
+                        },
+                        complete: function () {
+                            var num = numberWithCommas(Math.floor(this.val2));
+                            $(".cash span").text(num);
+                        }
+                    },'easeOutSine');
+
+                    function numberWithCommas(x) {
+                            return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                        }
+    }
+});
+
+function checkVisible( elm, eval ) {
+    eval = eval || "object visible";
+    var viewportHeight = $(window).height(), // Viewport Height
+        scrolltop = $(window).scrollTop(), // Scroll Top
+        y = $(elm).offset().top,
+        elementHeight = $(elm).height();   
+    
+    if (eval == "object visible") return ((y < (viewportHeight + scrolltop)) && (y > (scrolltop - elementHeight)));
+    if (eval == "above") return ((y < (viewportHeight + scrolltop)));
+}
+            </script>
+            
+            </div>
+            <div class="transfer wrap">
+                <div class="content">
+                    <h2>이체는 더욱 간편하게</h2>
+                    <p>
+                        많은 내용을 입력할 필요없이 입금 계좌번호는<br>
+카카오톡 친구만 선택하면 간편하게 이체할 수 있습니다.<br>
+예약이체, 여러 건의 이체도 간편하게 이용해보세요.
+                    </p>
+                </div>
+                <div class="images">
+                    <div class="one"></div>
+                    <div class="two"></div>
+                    <div class="three"></div>
+                    <div class="four"></div>
+                </div>
+            </div>
+
+<script>
+    // $(window).on('scroll',function(){
+    //     console.log($(window).scrollTop())
+    //     console.log($(window).scrollTop()+620)
+    // })
+    $('.transfer .images').hide()
+   $(window).scroll(function() {
+        if ($(this).scrollTop()+620 >= Math.ceil($('.transfer').offset().top)) {
+            $('.transfer .images').show()
+        }
+    });
+</script>
+            <div class="design">
+                <div class="wrap">
+                    <div class="images"></div>
+                    <div class="content">
+                        <h2>
+                            디자인은 내 맘대로<br>
+혜택은 누구에게나
+                        </h2>
+                        <p>
+                            카카오프렌즈 캐릭터 디자인, 멋스러운 솔리드 디자인의<br>
+체크카드를 취향에 따라 선택할 수 있습니다.<br>
+모든 프렌즈 체크카드는 디자인이 달라도
+혜택은 동일하게 제공됩니다.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="whenever">
+                <div class="wrap">
+                    <div class="image"></div>
+                    <div class="content">
+                         <h2>언제든지 이용할 수 있는 뱅크</h2>
+                         <p>영업점에 방문없이 계좌개설, 대출신청, 해외송금, 증명서 발급까지<br>
+                            언제든 필요한 은행 업무를 카카오뱅크 모바일앱을 통해 이용해보세요.</p>
+                        <span>※ 고객센터 유선상담은 밤 7시까지 운영되며, 톡상담 및 분실, 사고 신고에 대한 상담은 24시간 지원합니다. 고객센터 1599-3333</span>
+                    </div>
+                    <div class="stars">
+                        <div class="star s1"></div>
+                        <div class="star s2"></div>
+                        <div class="star s3"></div>
+                        <div class="star s4"></div>
+                        <div class="star s5"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="explain wrap">
+                <div class="board">
+                    <a href="#!">상품안내 <span></span></a>
+                    <div class="board_content">
+                        상품안내입니다
+                    </div>
+                </div>
+                <div class="board">
+                    <a href="#!">금리정보 <span></span></a>
+                    <div class="board_content">
+                        상품안내입니다
+                    </div>
+                </div>
+                <div class="board">
+                    <a href="#!">수수료정보 <span></span></a>
+                    <div class="board_content">
+                        상품안내입니다
+                    </div>
+                </div>
+                <div class="board">
+                    <a href="#!">기타사항 <span></span></a>
+                    <div class="board_content">
+                        상품안내입니다
+                    </div>
+                </div>
+                <div class="board">
+                    <a href="#!">상품설명서 및 이용약관 <span></span></a>
+                    <div class="board_content">
+                        상품안내입니다
+                    </div>
+                </div>
+            </div>
+            <script>
+                $('.explain .board a').click(function(){
+                    $(this).toggleClass('active')
+                    $(this).parent().find('div').slideToggle()
+                    $(this).find('span').toggleClass('on')
+                    if($('.explain .board a span').hasClass('on')){
+                        $(this).find('span').css('transform','scaleY(-1)')
+                    }else{
+                        $(this).find('span').css('transform','scaleY(1)')
+                    }
+                })
+            </script>
+        <div class="footer"></div>
+    </body>
+    
+    </html>
