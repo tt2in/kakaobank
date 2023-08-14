@@ -160,3 +160,21 @@
     opacity: 1;
   }
 }
+
+@keyframes search {
+  0% {
+    transform: perspective(1000px) rotateX(-90deg);
+  }
+  45% {
+    transform: perspective(1000px) rotateX(24deg);
+  }
+  75% {
+    transform: perspective(1000px) rotateX(-10deg);
+  }
+  90% {
+    transform: perspective(1000px) rotateX(5deg);
+  }
+  100% {
+    transform: perspective(1000px) rotateX(0);
+  }
+}

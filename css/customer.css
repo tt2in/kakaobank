@@ -25,6 +25,10 @@
   align-items: center;
   gap: 20px;
   padding-left: 20px;
+
+  animation-name: search;
+  animation-duration: 1s;
+  perspective-origin: center;
 }
 .search .img {
   background-image: url(../images/카카오뱅크3/img_kabang_220615.png);
@@ -35,6 +39,7 @@
 .search input {
   border: none;
   width: 500px;
+  outline: none;
 }
 .top .tag {
   color: var(--color-font1);
@@ -43,11 +48,11 @@
 .category {
   width: 1080px;
   height: 70px;
-  border: 1px solid var(--color-notice);
   margin-top: 45px;
   margin-bottom: 60px;
 }
 .category ul {
+  border: 1px solid var(--color-notice);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -64,9 +69,16 @@
 .category ul li:last-child a {
   border-right: none;
 }
-.category ul li:hover a {
+.category ul li {
+  border: 1px solid transparent;
+}
+.category ul li:hover {
   text-decoration: underline;
   border: 1px solid var(--color-font);
+  margin-left: -5px;
+}
+.category ul li:first-child:hover {
+  margin-left: 0;
 }
 /* 리스트 */
 .list {
