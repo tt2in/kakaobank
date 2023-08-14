@@ -114,7 +114,7 @@
 }
 
 /* main */
-@keyframes gathering {
+@keyframes overseas {
   from {
     top: 300px;
   }
@@ -149,5 +149,14 @@
   }
   to {
     background-color: white;
+  }
+}
+
+@keyframes star {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
   }
 }

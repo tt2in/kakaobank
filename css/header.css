@@ -83,6 +83,9 @@
   flex: 1;
   /* float: left; */
 }
+.bank_intro ul > a:hover {
+  text-decoration: underline;
+}
 .bank_intro ul > a {
   font-size: 20px;
   font-weight: var(--medium);
@@ -96,4 +99,7 @@
   font-size: 14px;
   display: block;
   margin-bottom: 15px;
+}
+.bank_intro ul > li:hover > a {
+  text-decoration: underline;
 }
