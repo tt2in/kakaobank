@@ -31,7 +31,7 @@
   perspective-origin: center;
 }
 .search .img {
-  background-image: url(../images/카카오뱅크3/img_kabang_220615.png);
+  background-image: url(../images/image3/img_kabang_220615.png);
   background-position: -156px 0;
   width: 27px;
   height: 27px;
@@ -126,7 +126,7 @@
   display: inline-block;
   width: 16px;
   height: 9px;
-  background-image: url(../images/카카오뱅크2/recom.png);
+  background-image: url(../images/image2/recom.png);
   background-position: -99px -118px;
 }
 

@@ -1,5 +1,5 @@
 <div class="wrap">
-    <div class="logo"><a href="../pages/main.html"><img src="../images/카카오뱅크1/logo_black.svg" alt=""></a></div>
+    <div class="logo"><a href="../pages/main.html"><img src="../images/image1/logo_black.svg" alt=""></a></div>
     <div>
         <div class="menu">
             <ul>
@@ -146,7 +146,7 @@
                 </li>
             </ul>
         </div>
-        <div class="eng"><a href="#!"><img src="../images/카카오뱅크1/icon_global.png" alt=""></a></div>
+        <div class="eng"><a href="#!"><img src="../images/image1/icon_global.png" alt=""></a></div>
     </div>
 </div>
 
@@ -158,7 +158,7 @@
             $(this).find('.bank_intro').css({ 'visibility': 'visible' })
             $('.header').css({ 'background-color': 'white', 'transition': 'all, 0.5s' })
             $('.menu > ul > li a').css('color','var(--color-font)')
-            $('.header .logo a img').attr("src", "../images/카카오뱅크1/logo_black.svg")
+            $('.header .logo a img').attr("src", "../images/image1/logo_black.svg")
         }, function () {
             $('.bank_intro').css({ 'visibility': 'hidden' })
             $('.header').css('background-color', 'transparent')
@@ -167,7 +167,7 @@
             } else {
                 $('.header').css('background-color', 'transparent')
                 if (path.includes('product')) {
-                    $('.header .logo a img').attr("src", "../images/카카오뱅크2/logo-white.png")
+                    $('.header .logo a img').attr("src", "../images/image2/logo-white.png")
                     $('.menu > ul > li a').css('color','white')
                     $('.menu > ul > li:last-child a').css({'color':'var(--color-font)'})
                     $('.eng a img').css({'-webkit-filter': 'brightness(0) invert(1)','filter': 'brightness(0) invert(1)'})
@@ -179,13 +179,13 @@
         if ($(window).scrollTop() == 0) {
             $('.header').css('background-color', 'transparent')
             if (path.includes('product')) {
-                $('.header .logo a img').attr("src", "../images/카카오뱅크2/logo-white.png")
+                $('.header .logo a img').attr("src", "../images/image2/logo-white.png")
                 $('.menu > ul > li a').css('color','white')
                 $('.menu > ul > li:last-child a').css({'color':'var(--color-font)'})
                 $('.eng a img').css({'-webkit-filter': 'brightness(0) invert(1)','filter': 'brightness(0) invert(1)'})
             }
         }else{
-            $('.header .logo a img').attr("src", "../images/카카오뱅크1/logo_black.svg")
+            $('.header .logo a img').attr("src", "../images/image1/logo_black.svg")
             $('.menu > ul > li a').css('color','var(--color-font)')
             $('.eng a img').css({'-webkit-filter': 'grayscale(100%) brightness(0)','filter': 'grayscale(100%) brightness(0)'})
         }
@@ -195,14 +195,14 @@
             if ($(window).scrollTop() == 0) {
                 $('.header').css('background-color', 'transparent')
                 if (path.includes('product')) {
-                    $('.header .logo a img').attr("src", "../images/카카오뱅크2/logo-white.png")
+                    $('.header .logo a img').attr("src", "../images/image2/logo-white.png")
                     $('.menu > ul > li a').css('color','white')
                     $('.menu > ul > li:last-child a').css({'color':'var(--color-font)'})
                     $('.eng a img').css({'-webkit-filter': 'brightness(0) invert(1)','filter': 'brightness(0) invert(1)'})
 
                 }
             }else{
-                $('.header .logo a img').attr("src", "../images/카카오뱅크1/logo_black.svg")
+                $('.header .logo a img').attr("src", "../images/image1/logo_black.svg")
                 $('.menu > ul > li a').css('color','var(--color-font)')
                 $('.eng a img').css({'-webkit-filter': 'grayscale(100%) brightness(0)','filter': 'grayscale(100%) brightness(0)'})
 

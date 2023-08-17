@@ -49,14 +49,14 @@
   margin-right: 50px;
 }
 .certification a:first-child {
-  background-image: url(../images/카카오뱅크1/footer_icon1.png);
+  background-image: url(../images/image1/footer_icon1.png);
   background-repeat: no-repeat;
   background-position: left;
   background-size: contain;
 }
 .certification a:last-child {
   width: 155px;
-  background-image: url(../images/카카오뱅크1/footer_icon2.png);
+  background-image: url(../images/image1/footer_icon2.png);
   background-repeat: no-repeat;
   background-position: left;
   background-size: contain;
